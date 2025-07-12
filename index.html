@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Такси Ритм</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .navbar {
+      background-color: #ffc107;
+    }
+    .hero {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.25rem;
+    }
+    .cards-section {
+      padding: 30px 0;
+      background-color: #ffd740;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      margin: 15px 0;
+    }
+    .car-section {
+      padding: 50px 0;
+    }
+    .car-section h2 {
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .card-img-top {
+      height: 120px;
+      object-fit: contain;
+    }
+    .about-section {
+      background-color: #262626;
+      color: white;
+      padding: 60px 0;
+    }
+    .about-section h2 {
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .about-section p {
+      line-height: 1.6;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      border-top: 2px solid #ffc107;
+      padding-top: 30px;
+    }
+    .stat-box {
+      text-align: center;
+      flex: 1;
+      min-width: 200px;
+      color: #ffc107;
+    }
+    .stat-box p {
+      margin: 0;
+      color: white;
+    }
+
+    .selector-btn {
+      min-width: 60px;
+      min-height: 60px;
+      font-size: 1.2rem;
+      border-radius: 15px;
+    }
+    .active-btn {
+      border: 2px solid red !important;
+      color: red !important;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="./base.html">TMT TAXI</a>
+        <div class="ml-auto d-flex align-items-center">
+          <a href="#" class="btn btn-link">Korporativ taksi</a>
+          <a href="#" class="btn btn-link">Shaxsiy hisob</a>
+          <a href="#" class="btn btn-dark">Taksi buyurtma qiling</a>
+        </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+   <div class="container">
+    <div class="row vh-100">
+
+      <!-- Left: Text section -->
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
+        <h1 class="display-4 fw-bold">avtomobil ijarasi ish uchun ichida taksida moskva</h1>
+        <p class="fs-5 mt-4">TMT taxi - nomi va obro'siga ega bo'lgan taksi kompaniyasida pul ishlang</p>
+        <a href="#" class="btn btn-danger btn-lg mt-4 px-5 py-3">Haydovchi bo'lish</a>
+      </div>
+
+      <!-- Right: Image slider section -->
+      <div class="col-md-6 p-0">
+        <div id="taxiCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+              <img src="photo_taxi.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Taxi">
+              <div class="carousel-caption text-start">
+                <h5 class="fs-3">1700 ta mashinani to'xtating</h5>
+                <p>Biz barcha mashinalarga o'z vaqtida texnik xizmat ko'rsatamiz va texnik xizmat ko'rsatamiz</p>
+              </div>
+            </div>
+            <!-- Add more carousel-item divs if needed -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#taxiCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#taxiCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+     </div>
+    </div>
+  </div>
+
+  <!-- Daromad va Afzalliklar bo‘limi -->
+ <section class="py-5 bg-light border-top">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-7">
+        <h1 class="display-5 fw-bold">daromad 1 000 000 – 1 200 000 So'm</h1>
+      </div>
+      <div class="col-md-5 d-flex align-items-center">
+        <p class="fs-4">Kundalik to'lovlar bilan moslashuvchan jadval bo'yicha ishlang</p>
+      </div>
+    </div>
+
+    <!-- 4 ta afzallik kartalari -->
+    <div class="row text-start">
+      <div class="col-md-3 mb-4">
+        <div class="d-flex align-items-center mb-2">
+          <span class="me-2" style="color: #FFC107;">●</span>
+          <span class="text-muted">01</span>
+        </div>
+        <hr>
+        <h5 class="fw-bold">Yandex taksi</h5>
+        <p>O'zbekistonda har qanday aggregatorlarga cheklovlarsiz ulanish</p>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="d-flex align-items-center mb-2">
+          <span class="me-2" style="color: #FFC107;">●</span>
+          <span class="text-muted">02</span>
+        </div>
+        <hr>
+        <h5 class="fw-bold">Harakat erkinligi</h5>
+        <p>Ortiqcha kilometr uchun jarima yo‘q, bir kundan boshlab avtomobil ijarasi</p>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="d-flex align-items-center mb-2">
+          <span class="me-2" style="color: #FFC107;">●</span>
+          <span class="text-muted">03</span>
+        </div>
+        <hr>
+        <h5 class="fw-bold">Har olti oyda bir bonus</h5>
+        <p>6 kunlik ijara 1 kun bepul</p>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="d-flex align-items-center mb-2">
+          <span class="me-2" style="color: #FFC107;">●</span>
+          <span class="text-muted">04</span>
+        </div>
+        <hr>
+        <h5 class="fw-bold">O‘rtacha hisob 448 000 so'm</h5>
+        <p>Bizning arizamizda</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Sizning mashinangiz bo‘limi -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-4">sizning mashinangiz <span class="text-muted fs-1">18</span></h1>
+
+    <!-- Kategoriyalar -->
+    <div class="d-flex gap-5 mb-4">
+      <span class="fw-semibold text-secondary">Iqtisodiyot</span>
+      <span class="fw-semibold text-dark">Qulaylik</span>
+      <span class="fw-semibold text-dark">Konfor +</span>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <p class="text-muted small">IQTISODIYOT</p>
+            <p class="text-muted small">JADVAL 6/1</p>
+            <h5 class="card-title fw-bold">Kia Rio <br>(Solaris KRS)</h5>
+            <span class="badge bg-warning text-dark rounded-pill py-2 px-3 mb-2">2025</span>
+            <p class="mb-2">Kuniga 2300 ₽</p>
+            <p class="text-muted small">HAFTASIGA 2900 ₽ DAN</p>
+          </div>
+          <img src="eqm5_black.png" class="card-img-bottom img-fluid" alt="Kia Rio">
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <p class="text-muted small">IQTISODIYOT</p>
+            <p class="text-muted small">JADVAL 6/1</p>
+            <h5 class="card-title fw-bold">Hyundai Solaris</h5>
+            <span class="badge bg-warning text-dark rounded-pill py-2 px-3 mb-2">ХИТ</span>
+            <p class="mb-2">Kuniga 1800 ₽</p>
+            <p class="text-muted small">HAFTASIGA 2400 ₽ DAN</p>
+          </div>
+          <img src="eqm5_black.png" class="card-img-bottom img-fluid" alt="Hyundai Solaris">
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <p class="text-muted small">QULAYLIK</p>
+            <p class="text-muted small">JADVAL 6/1</p>
+            <h5 class="card-title fw-bold">Hyundai Elantra</h5>
+            <p class="mb-2">Kuniga 2600 ₽</p>
+            <p class="text-muted small">HAFTASIGA 2800 ₽ DAN</p>
+          </div>
+          <img src="eqm5_black.png" class="card-img-bottom img-fluid" alt="Hyundai Elantra">
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <p class="text-muted small">COMFORT PLUS</p>
+            <p class="text-muted small">JADVAL 6/1</p>
+            <h5 class="card-title fw-bold">Hyundai Sonata</h5>
+            <p class="mb-2">Kuniga 3000 ₽</p>
+            <p class="text-muted small">HAFTASIGA 3000 ₽ DAN</p>
+          </div>
+          <img src="eqm5_black.png" class="card-img-bottom img-fluid" alt="Hyundai Sonata">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+      <!-- Moskvich 3 -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <p class="text-muted small">QULAYLIK</p>
+            <p class="text-muted small">JADVAL 6/1</p>
+            <h5 class="card-title fw-bold">Moskvich 3</h5>
+            <p class="mb-2">Kuniga 2600 ₽</p>
+            <p class="text-muted small">BIR HAFTADA 3300 ₽</p>
+          </div>
+          <img src="eqm5_black.png" class="card-img-bottom img-fluid" alt="Moskvich 3">
+        </div>
+      </div>
+
+      <!-- Gili Emgrand 7 -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <p class="text-muted small">QULAYLIK</p>
+            <p class="text-muted small">JADVAL 6/1</p>
+            <h5 class="card-title fw-bold">Gili Emgrand 7</h5>
+            <span class="badge bg-warning text-dark rounded-pill py-2 px-3 mb-2">2024 YIL</span>
+            <p class="mb-2">Kuniga 2600 ₽</p>
+            <p class="text-muted small">HAFTASIGA 3400 ₽ DAN</p>
+          </div>
+          <img src="eqm5_black.png" class="card-img-bottom img-fluid" alt="Gili Emgrand">
+        </div>
+      </div>
+
+      <!-- Jadval 6/1 Blok -->
+      <div class="col">
+        <div class="h-100">
+          <div class="p-4 bg-black text-white h-50 d-flex flex-column justify-content-center">
+            <div class="d-flex align-items-center mb-2">
+              <span class="me-2" style="color: yellow;">●</span>
+              <h5 class="fw-bold mb-0 text-warning">Jadval 6/1</h5>
+            </div>
+            <p class="mb-0">Ijaraning har 7-kuni bepul – ish yoki dam olish</p>
+          </div>
+          <div class="d-flex">
+            <div class="w-50 p-4 bg-danger text-white text-center">
+              <div style="font-size: 2rem;">📅</div>
+            </div>
+            <div class="w-50 p-4 bg-warning text-dark text-center fw-bold small">
+              NEGA BU<br>BIZ BILAN FOYDALI
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toyota Camry -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <p class="text-muted small">COMFORT PLUS</p>
+            <p class="text-muted small">JADVAL 6/1</p>
+            <h5 class="card-title fw-bold">Toyota Camry</h5>
+            <p class="mb-2">Kuniga 3000 ₽</p>
+            <p class="text-muted small">HAFTASIGA 3500 ₽ DAN</p>
+          </div>
+          <img src="eqm5_black.png" class="card-img-bottom img-fluid" alt="Toyota Camry">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BOGLAYMIZ BO‘LIMI -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-4">bog'laymiz</h1>
+
+    <!-- Tabs nav -->
+    <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="yandex-tab" data-bs-toggle="tab" data-bs-target="#yandex" type="button" role="tab">Yandex.Taksi</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="ritm-tab" data-bs-toggle="tab" data-bs-target="#ritm" type="button" role="tab">TMT taxi</button>
+      </li>
+    </ul>
+
+    <!-- Tabs content -->
+    <div class="tab-content" id="myTabContent">
+
+      <!-- Yandex.Taksi -->
+      <div class="tab-pane fade show active" id="yandex" role="tabpanel">
+        <div class="row align-items-start">
+          <div class="col-md-1">
+            <img src="./yandex_go.svg" class="img-fluid rounded-3" alt="Yandex Icon" style="width: 60px;">
+          </div>
+          <div class="col-md-11">
+            <h5><span class="text-danger fw-bold">Sertifikatlangan</span> Yandex.Taksi parkidan avtomobillar</h5>
+            <ul class="mt-3">
+              <li>Yandex.Taxi komissiyasi + 3 % TMT taxi komissiyasi</li>
+              <li>Tanlash uchun markali avtomobillar</li>
+              <li>Yandex-da ishlash va qo'llab-quvvatlash muammolarini hal qilishda bepul yordam</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Taksi ritmi -->
+      <div class="tab-pane fade" id="ritm" role="tabpanel">
+        <div class="row align-items-start">
+          <div class="col-md-1">
+            <img src="./taxi_ritm.svg" class="img-fluid rounded-3" alt="App Icon" style="width: 60px;">
+          </div>
+          <div class="col-md-11">
+            <h5 class="fw-bold">Bizning arizamizdagi bitta buyurtmaning o'rtacha miqdori 45 000 so'm</h5>
+            <ul class="mt-3">
+              <li>Bizning arizamizdagi bitta buyurtmaning o'rtacha miqdori 45 000 so'm</li>
+              <li>Etarli yo'lovchilar;</li>
+              <li>TMT taxi komissiyasi 18%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Taksi uchun avtomobil ijarasi shartlari -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="display-5 fw-bold text-center mb-5">taksi uchun avtomobil ijarasi shartlari</h1>
+    <div class="row">
+
+      <!-- Haydovchi talablari -->
+      <div class="col-md-6 mb-5">
+        <div class="mb-3">
+          <span style="font-size: 1.5rem;">📅</span>
+        </div>
+        <h5 class="fw-bold mb-3">Haydovchilar uchun talablar</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">• Yoshi 23 yoshdan</li>
+          <li class="mb-2 ">• O'zbekiston fuqaroligi</li>
+          <li class="mb-2 ">• O'zbek tilini suhbat darajasida bilish</li>
+          <li class="mb-2 ">• Haydovchilik tajribasi 3 yil</li>
+        </ul>
+        <a href="#" class="btn btn-warning fw-bold mt-4 px-5 py-3">• HAYDOVCHI BO'L</a>
+      </div>
+
+      <!-- Foydalanish shartlari -->
+      <div class="col-md-6 mb-5">
+        <div class="mb-3">
+          <span style="font-size: 1.5rem;">🎥</span>
+        </div>
+        <h5 class="fw-bold mb-3">Foydalanish shartlari</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2 ">• Litsenziya bilan</li>
+          <li class="mb-2 ">• Garov yo‘q</li>
+          <li class="mb-2 ">• Qaytariladigan kafolatli depozit</li>
+          <li class="mb-2 ">• Bir kundan boshlab ijara</li>
+          <li class="mb-2 ">• Kilometrga cheklovlar yo‘q</li>
+          <li class="mb-2 ">• Komissiyasiz kunlik to‘lovlar</li>
+          <li class="mb-2 ">• Uzluksiz ijaraning har ettinchi kuni bepul</li>
+          <li class="mb-2 ">• Shinalarga texnik xizmat ko‘rsatish, almashtirish va saqlash, ta’mirlash, avtomashinalarni majburiy sug‘urta qilish va transport soliqlari bizning hisobimizdan</li>
+          <li class="mb-2 ">• TMT taxi parkida balansni to‘ldirish komissiyasiz, boshqa hollarda 0% bonus</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-4">sovg'a kalkulyatori</h1>
+    <div class="row">
+
+      <!-- Tanlash qismi -->
+      <div class="col-md-6 mb-5">
+
+        <h5 class="mb-3">Haftada ish kunlari</h5>
+        <div class="d-flex flex-wrap gap-2 mb-4" id="day-buttons">
+          <button class="btn btn-outline-secondary selector-btn" data-value="1">1</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="2">2</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="3">3</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="4">4</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="5">5</button>
+          <button class="btn btn-outline-secondary selector-btn active-btn" data-value="6">6</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="7">7</button>
+        </div>
+
+        <h5 class="mb-3">Kuniga soatlar</h5>
+        <div class="d-flex flex-wrap gap-2 mb-4" id="hour-buttons">
+          <button class="btn btn-outline-secondary selector-btn" data-value="8">8</button>
+          <button class="btn btn-outline-secondary selector-btn active-btn" data-value="9">9</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="10">10</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="11">11</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="12">12</button>
+        </div>
+
+        <a href="#" class="btn btn-warning fw-bold px-4 py-3 mt-3">• AVTOMOBIL IJARASI</a>
+      </div>
+
+      <!-- Natija qismi -->
+      <div class="col-md-6 d-flex">
+        <div class="w-50 bg-warning text-black p-4 d-flex flex-column justify-content-center">
+          <h5 class="fw-semibold">Start</h5>
+          <p class="mt-4 mb-1">Sizning daromadingiz</p>
+          <h2 class="fw-bold" id="eco-income">160 392 ₽</h2>
+        </div>
+        <div class="w-50 bg-black text-white p-4 d-flex flex-column justify-content-center">
+          <h5 class="fw-semibold">Kamfort</h5>
+          <p class="mt-4 mb-1">Sizning daromadingiz</p>
+          <h2 class="fw-bold" id="comfort-income">189 120 ₽</h2>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-muted mt-4 small">
+      Ma'lumotlar 2025 yil iyun oyidagi o'rtacha qiymatlar asosida.
+    </p>
+  </div>
+</section>
+
+<!-- JavaScript -->
+<script>
+  let selectedDays = 6;     // boshlang'ich 6 kun
+  let selectedHours = 9;    // boshlang'ich 9 soat
+
+  const ecoRate = 60000;     // Start: 50 000 so‘m/soat
+  const comfortRate = 70000; // Comfort: 60 000 so‘m/soat
+
+  const ecoOutput = document.getElementById('eco-income');
+  const comfortOutput = document.getElementById('comfort-income');
+
+  function updateIncome() {
+    const ecoTotal = selectedDays * selectedHours * ecoRate;
+    const comfortTotal = selectedDays * selectedHours * comfortRate;
+
+    ecoOutput.textContent = ecoTotal.toLocaleString('uz-UZ') + ' so‘m';
+    comfortOutput.textContent = comfortTotal.toLocaleString('uz-UZ') + ' so‘m';
+  }
+
+  // Kun tanlash
+  document.querySelectorAll('#day-buttons button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#day-buttons button').forEach(b => b.classList.remove('active-btn'));
+      btn.classList.add('active-btn');
+      selectedDays = parseInt(btn.dataset.value);
+      updateIncome();
+    });
+  });
+
+  // Soat tanlash
+  document.querySelectorAll('#hour-buttons button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#hour-buttons button').forEach(b => b.classList.remove('active-btn'));
+      btn.classList.add('active-btn');
+      selectedHours = parseInt(btn.dataset.value);
+      updateIncome();
+    });
+  });
+
+  // Boshlanishida hisobla
+  updateIncome();
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taxi Ritm</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar {
+      background-color: #ffc107;
+    }
+
+    .hero-section {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+    }
+
+    .yellow-section {
+      background-color: #ffd740;
+      padding: 40px 0;
+    }
+
+    .about-section {
+      background-color: #262626;
+      color: white;
+      padding: 60px 0;
+    }
+
+    .about-section h2, .yellow-section h1 {
+      font-weight: 700;
+    }
+
+    .accordion-item {
+      background-color: #fff;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .accordion-header {
+      padding: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .accordion-icon {
+      font-size: 24px;
+      transition: transform 0.3s ease;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 20px;
+      transition: all 0.3s ease;
+    }
+
+    .accordion-item.active .accordion-content {
+      padding: 15px 20px 20px;
+      max-height: 500px;
+    }
+
+    .accordion-item.active .accordion-icon {
+      transform: rotate(45deg);
+    }
+
+    .join-section {
+      background-color: #ffca28;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 40px;
+    }
+
+    .join-section img {
+      max-width: 500px;
+      height: auto;
+    }
+
+    .join-text {
+      padding-left: 60px;
+    }
+
+    .join-btn {
+      background: black;
+      color: white;
+      padding: 15px 25px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .quote-number {
+      font-size: 120px;
+      font-weight: bold;
+      color: #ffc107;
+    }
+
+    .arrow-btn {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      background: white;
+      font-size: 20px;
+    }
+    .car-image {
+      max-width: 400px;
+      height: auto;
+      object-fit: contain;
+    }
+    .requirements-section ul li {
+    font-size: 16px;
+    color: #000;
+  }
+
+  .requirements-section h1 {
+    color: #000;
+  }
+
+  .btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: #000;
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="./base.html">TMT TAXI</a>
+    <div class="ms-auto d-flex align-items-center gap-3">
+      <a href="#" class="btn btn-link">Korporativ taksi</a>
+      <a href="#" class="btn btn-link">Shaxsiy hisob</a>
+      <a href="#" class="btn btn-dark">Taksi buyurtma qiling</a>
+    </div>
+  </div>
+</nav>
+<section class="py-5 bg-white">
+  <div class="container">
+    <h1 class="display-4 fw-semibold mb-4">Kompaniyaning yaratilish tarixi</h1>
+
+    <p class="lead">
+      Bizning taksi kompaniyamiz tarixi 20022 yilda boshlangan. O'shanda ham, 90-yillardagi yovvoyi o'tish davrida ham biz ishonchli hamkor sifatida kompaniyamiz obro'siga tayanishga qaror qilib, o'z yo'limizni tanladik.
+    </p>
+
+    <p class="mt-3">
+      Yillar o'tdi, yo'lovchi tashish bozori jadal rivojlandi. Katta miqdordagi pulga ega bo'lgan "gigantlar" bozorga kirdi va bir necha oy ichida juda ko'p sonli avtomobillarga ega bo'lgan yirik taksi parklari yaratdilar, ular bilan raqobat qilish juda qiyin edi. Ammo bir muncha vaqt o'tgach, bunday kompaniyalar yopildi va sotildi. Gap shundaki, ular darhol foyda olish ilinjida o‘z obro‘-e’tiborini, xodimlarini, ayniqsa, mashinalarini ijaraga olgan haydovchilarni o‘ylamagan. Kompaniyalar yopildi va bizning parkimiz qiyin, ammo tizimli o'sishni davom ettirdi.
+    </p>
+  </div>
+</section>
+<section class="py-5 bg-light">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-4">Bizning muvaffaqiyatimiz siri</h1>
+
+    <p class="lead">
+      Dastlabki 2 yillik ish natijalariga ko'ra, biz Moskvadagi eng yirik taksi parklari qatoridamiz. Va agar siz Moskvaning barcha avtoparklarini yoshi va ishonchliligi bo'yicha baholasangiz, Taxi Ritm kompaniyasi reytingda birinchi o'rinda turadi, chunki biz 2023 yildan beri "omon qolishga" va munosib ishonchni saqlab qolishga muvaffaq bo'lgan yagonamiz. 2025 yil boshiga kelib, bizning taksi parkimiz tejamkorlik, Comfort va Comfort+ segmentlarida 1800 dan ortiq avtomobillarga ega. Bizda 8 ta motor kolonnasi va Moskvada o'z haydovchilar tayyorlash markazimiz ochilgan.
+    </p>
+
+    <p class="mt-4">
+      Ishonchli hamkor sifatidagi obro'-e'tiborimiz siri shundaki, biz dastlab haydovchilarga e'tibor qaratganmiz. Bizning asosiy vazifamiz doimo taksi haydovchilari uchun qulay hamkorlikni ta'minlash bo'lib kelgan va shunday bo'lib qoladi. Biz kompaniyaning ichki siyosatini shunday quridikki, barcha xodimlarimizning asosiy vazifasi haydovchiga yordam berishdir. Biz taksi haydovchilarining har qanday muammolarga darhol javob berishga va ularni chaqmoq tezligida hal qilishga harakat qilamiz, bizning qo'llab-quvvatlash xizmatimiz har doim tezkor javob beradi. Bizning taksi parkimiz haydovchilari ish bilan bog'liq har qanday shoshilinch bo'lmagan masalani o'z karvonida mexaniklar bilan hal qilishlari mumkin, ular uchun taksi haydovchilariga yordam berish ustuvor vazifadir.
+    </p>
+
+    <p class="mt-4">
+      Bizning munosabatimiz evaziga ko'plab haydovchilar bizga Internetda rahmat aytishadi va bizga ko'plab parklari juda yaxshi ko'radigan narsalarni – ijobiy sharhlarni qoldiradilar, biz ularni juda qadrlaymiz.
+    </p>
+  </div>
+</section>
+<section class="py-5">
+  <div class="container">
+    <!-- Sarlavha -->
+    <h1 class="display-4 fw-bold mb-4">Nima uchun biz bilan ishlash foydali?</h1>
+
+    <!-- Paragraflar -->
+    <p class="lead">
+      Har yili TMT taxi taksi haydovchilari uchun tobora qulay joyga aylanadi. Bizning taksi parkimiz haydovchilar uchun taklif qiladigan asosiy yo'nalish – bu depozitsiz taksi ijarasi. Siz bizning shartlarimizni taksi ijarasining asosiy sahifasida o'qishingiz mumkin.
+    </p>
+
+    <p class="mt-3">
+      Ammo asosiysi shundaki, bizning taksi kompaniyamiz avtomobil ijarasidan tashqari, hech qanday depozitsiz, dastlabki to‘lovlarsiz va yig‘imlarsiz qiziqarli shartlarda xarid qilish bilan taksi ijarasini taklif qiladi.
+    </p>
+
+    <!-- Bo'sh joy -->
+    <div class="my-5"></div>
+
+    <!-- Biznes taklif -->
+    <h2 class="display-5 fw-bold mb-3">Biznes taklifimiz</h2>
+
+    <p>
+      Agar siz taksida ishlash uchun ishonchli hamkorga qiziqsangiz, bizning taksi xizmatimizga keling. Biz sizlarga qulay hamkorlik qilish uchun shart-sharoitlarni yaratib beramiz, chunki bizning ustuvorligimiz ishonchlilik, kelajakka ishonchimiz siri shu yerda.
+    </p>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
