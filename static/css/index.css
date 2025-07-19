@@ -1,0 +1,202 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* HERO */
+.hero {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 50px 20px;
+}
+.hero img {
+  max-width: 60%;
+}
+
+/* CUSTOM BADGE */
+.badge-custom {
+  background: #ffcc00;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* SERVICES CARD */
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+}
+.fleet-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* ABOUT SECTION */
+.about {
+  background: #222;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: left; /* CHAPGA MOSLASH */
+}
+.about h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.about .highlight {
+  background: #ffcc00;
+  color: #000;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* STATS FLEX DIZAYN */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #444;
+  margin-top: 40px;
+  padding-top: 30px;
+  flex-wrap: wrap;
+}
+.stat-box {
+  text-align: center;
+  padding: 10px 20px;
+  flex: 1;
+  position: relative;
+}
+.stat-box:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background: #444;
+}
+.stat-box h4 {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 5px;
+}
+.stat-box p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* FUTURE SECTION */
+.future img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.btn-custom {
+  background: #ffcc00;
+  border: none;
+  font-weight: bold;
+}
+
+/* OFFCANVAS LEFT MENU */
+.offcanvas-start {
+  background: #fff;
+  box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+}
+.offcanvas-header {
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  padding: 15px 20px;
+}
+.offcanvas-body h2 {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  color: #333;
+}
+.offcanvas-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.offcanvas-body li {
+  margin-bottom: 8px;
+}
+.offcanvas-body a {
+  text-decoration: none;
+  color: #444;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+.offcanvas-body a:hover {
+  color: #ff9900;
+  padding-left: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+  }
+  .stat-box {
+    border-right: none !important;
+  }
+  .stat-box:not(:last-child)::after {
+    display: none;
+  }
+}
+.future-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.future-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Sariq tugma */
+.btn-yellow {
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  transition: 0.2s;
+}
+.btn-yellow:hover {
+  background: #ffb700;
+}
+
+/* Rasmlar yonma-yon */
+.future-img {
+  width: 48%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Slayder tugmalari */
+.future-controls .btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

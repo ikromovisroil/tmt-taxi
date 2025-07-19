@@ -2,312 +2,158 @@
 <html lang="uz">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TMT TAXI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TMT Taxi</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-    }
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/index1.css">
+  <link rel="stylesheet" href="./static/css/index4.css">
+  <link rel="stylesheet" href="./static/css/index5.css">
 
-    .navbar {
-      background-color: #ffc107;
-    }
 
-    .hero-section {
-      background-color: #f8f9fa;
-      padding: 60px 0;
-    }
 
-    .yellow-section {
-      background-color: #ffd740;
-      padding: 40px 0;
-    }
-
-    .about-section {
-      background-color: #262626;
-      color: white;
-      padding: 60px 0;
-    }
-
-    .about-section h2, .yellow-section h1 {
-      font-weight: 700;
-    }
-
-    .accordion-item {
-      background-color: #fff;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .accordion-header {
-      padding: 20px;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 18px;
-      font-weight: 500;
-    }
-
-    .accordion-icon {
-      font-size: 24px;
-      transition: transform 0.3s ease;
-    }
-
-    .accordion-content {
-      max-height: 0;
-      overflow: hidden;
-      padding: 0 20px;
-      transition: all 0.3s ease;
-    }
-
-    .accordion-item.active .accordion-content {
-      padding: 15px 20px 20px;
-      max-height: 500px;
-    }
-
-    .accordion-item.active .accordion-icon {
-      transform: rotate(45deg);
-    }
-
-    .join-section {
-      background-color: #ffca28;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 60px 40px;
-    }
-
-    .join-section img {
-      max-width: 500px;
-      height: auto;
-    }
-
-    .join-text {
-      padding-left: 60px;
-    }
-
-    .join-btn {
-      background: black;
-      color: white;
-      padding: 15px 25px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .quote-number {
-      font-size: 120px;
-      font-weight: bold;
-      color: #ffc107;
-    }
-
-    .arrow-btn {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      border: 1px solid #ccc;
-      background: white;
-      font-size: 20px;
-    }
-    .car-image {
-      max-width: 400px;
-      height: auto;
-      object-fit: contain;
-    }
-    .requirements-section ul li {
-    font-size: 16px;
-    color: #000;
-  }
-
-  .requirements-section h1 {
-    color: #000;
-  }
-
-  .btn-warning {
-    background-color: #ffc107;
-    border: none;
-    color: #000;
-  }
-  </style>
 </head>
 <body>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="megaMenu">
+  <div class="offcanvas-header" style="background:#ffcc00;">
+    <h4 class="offcanvas-title">📋 TMT TAXI Menyu</h4>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+  </div>
 
-<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="offcanvas-body">
     <div class="container">
-        <a class="navbar-brand font-weight-bold" href="./base.html">TMT TAXI</a>
-        <div class="ml-auto d-flex align-items-center">
-          <a href="tel:+998773105555" class="btn btn-link">☎️ (77 310 55 55)</a>
-          <a href="tel:+998952435555" class="btn btn-link">☎️ (95 243 55 55)</a>
-          <a href="https://taxi.yandex.uz/ru_uz/" class="btn btn-dark">Taksi buyurtma qiling</a>
+      <div class="">
+        <!-- Haydovchilarga -->
+        <div>
+          <h3>Haydovchilarga</h3>
+          <ul class="list-unstyled">
+            <li><a href="index1.html">* Avto ijarasi</a></li>
+            <li><a href="index2.html">* Avtomobil sotib olish</a></li>
+            <li><a href="index3.html">* TMT Taxi tizimiga ulanish</a></li>
+            <li><a href="index4.html">* Taxi parklarimiz</a></li>
+          </ul>
         </div>
-    </div>
-  </nav>
+        <!-- Tariflar -->
+        <div>
+          <h3>Tariflar</h3>
+          <ul class="list-unstyled">
+            <li><a href="https://taxi.yandex.uz/uz_uz/tashkent/tariff/combo">* Ekanom</a></li>
+            <li><a href="https://taxi.yandex.uz/uz_uz/tashkent/tariff/start">* Start</a></li>
+            <li><a href="https://taxi.yandex.uz/uz_uz/tashkent/tariff/business">* Komfort</a></li>
+            <li><a href="https://taxi.yandex.uz/uz_uz/tashkent/tariff/comfortplus">* Komfort+</a></li>
+            <li><a href="https://taxi.yandex.uz/uz_uz/tashkent/tariff/vip">* Biznes</a></li>
+            <li><a href="https://taxi.yandex.uz/uz_uz/tashkent/tariff/ultimate">* Premier</a></li>
+            <li><a href="https://taxi.yandex.uz/uz_uz/tashkent/tariff/standart">* Elektro</a></li>
+          </ul>
+        </div>
+        <!-- Kompaniya haqida -->
+        <div>
+          <h3>Dastafka</h3>
+          <ul class="list-unstyled">
+            <li><a href="https://taxi.yandex.uz/uz_uz/tashkent/tariff/express">* Yetkazish</a></li>
+            <li><a href="https://taxi.yandex.uz/uz_uz/tashkent/tariff/cargo">* Yuk tashish</a></li>
+          </ul>
+        </div>
 
-<!-- Hero section -->
-<div class="hero-section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <h1 class="display-4 fw-bold">🚖 Siz uchun — TMT TAXI</h1>
-        <p class="fs-5 mt-3">Siz uchun taksi. Siznikini ham, siznikichi xodimlar uchun ham!
-            Biz sizning va jamoangizning kundalik harakatlanishini oson, qulay va ishonchli qilamiz.</p>
-      </div>
-      <div class="col-md-6">
-        <img src="photo_taxi.jpg" alt="Taxi" class="img-fluid rounded">
       </div>
     </div>
   </div>
 </div>
-
-<section class="py-5 bg-light">
+<!-- HEADER -->
+<!-- FIXED NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background:#ffcc00;">
   <div class="container">
-    <h2 class="display-5 fw-bold mb-4">📲 Sizga kerak bo‘lgan barcha xizmatlar — bir joyda!</h2>
-
-    <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-
-        <!-- 1-slayd -->
-        <div class="carousel-item active">
-          <div class="row text-center">
-            <div class="col-md-4">
-              <div class="card h-100 border-0">
-                <div class="card-body">
-                  <img src="get1.svg" alt="Manager" width="40">
-                  <h5 class="mt-3">🚕 Mobil ilova – TMT TAXI ilovasi</h5>
-                  <p class="text-muted">Taksini bir necha soniyada chaqiring yoki oldindan rejalashtiring!</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100 border-0">
-                <div class="card-body">
-                  <img src="get2.svg" alt="Airport" width="40">
-                  <h5 class="mt-3">📦 Kuryer yetkazib berish xizmati</h5>
-                  <p class="text-muted">TMT TAXI nafaqat yo‘lovchi, balki yuk ham tashiydi!</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100 border-0">
-                <div class="card-body">
-                  <img src="get2.svg" alt="Airport" width="40">
-                  <h5 class="mt-3">📦 Kuryer yetkazib berish xizmati</h5>
-                  <p class="text-muted">TMT TAXI nafaqat yo‘lovchi, balki yuk ham tashiydi!</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100 border-0">
-                <div class="card-body">
-                  <img src="get3.svg" alt="Driver with car" width="40">
-                  <h5 class="mt-3">👤 Shaxsiy menejer</h5>
-                  <p class="text-muted">Murakkab, nostandart yoki maxsus tashish kerakmi?</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2-slayd -->
-        <div class="carousel-item">
-          <div class="row text-center justify-content-center">
-            <div class="col-md-4">
-              <div class="card h-100 border-0">
-                <div class="card-body">
-                  <img src="get4.svg" alt="Mobile app" width="40">
-                  <h5 class="mt-3">✈️ Aeroportda kutib olish</h5>
-                  <p class="text-muted">TMT TAXI — aeroport xizmatlarida yuqori daraja va ishonchli xizmat.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100 border-0">
-                <div class="card-body">
-                  <img src="get5.svg" alt="Courier" width="40">
-                  <h5 class="mt-3">🚘 Haydovchi bilan avtomobil ijarasi</h5>
-                  <p class="text-muted">Biz sizga professional haydovchi bilan avtomobil taqdim etamiz — kun davomida xizmat ko‘rsatadi, xohlagan joyga olib boradi, kutadi va yordam beradi.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Navigatsiya tugmalari -->
-      <div class="d-flex justify-content-end mt-3">
-        <button class="btn btn-outline-dark me-2" data-bs-target="#servicesCarousel" data-bs-slide="prev">←</button>
-        <button class="btn btn-outline-danger" data-bs-target="#servicesCarousel" data-bs-slide="next">→</button>
-      </div>
+     <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#megaMenu">
+      ☰
+    </button>
+    <a class="navbar-brand fw-bold" href="index.html">🚖 TMT TAXI</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link fw-bold" href="#">Taksi buyurtma qilish</a></li>
+      </ul>
+      <span class="ms-3 fw-bold">📞 +998 95 243 55 55</span>
+      <span class="ms-3 fw-bold">📞 +998 77 310 55 55</span>
     </div>
+  </div>
+</nav>
+
+<div style="padding-top: 80px;"></div>
+
+<section class="py-5">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Professionalarga hamroh bo‘ling</h2>
+    <p class="lead">
+      Biz mashhur stand-up komiklari yoki blogerlarning ismlarini bilamiz, ularni ijtimoiy tarmoqlarda kuzatamiz va hayotidan ijobiy emotsiyalar olamiz. Ammo kundalik qulaylik va xavfsizlik yaratadigan odamlarning mehnati ko‘pincha yetarlicha qadrlanmaydi.
+    </p>
+
+    <h4 class="fw-bold mt-4">Ko‘rinmas kasb egalari e’tiborda bo‘lishi kerak</h4>
+    <p>
+      Taksi xizmatidan foydalanganingizda, hayotingizni haydovchiga ishonib topshirasiz. Sizning xavfsizligingiz – bu uning mas’uliyati. Shu inson hurmatga va sifatli xizmat uchun samimiy minnatdorchilikka loyiq. O‘z ishining professionali bo‘lish – bu haqiqatan ham zo‘r.
+      <strong>“TMT Taxi”</strong> kompaniyasi “Professionalarga hamroh bo‘ling” aksiyasini boshladi, uning maqsadi e’tiborga loyiq, ammo ko‘rinmas bo‘lib qolayotgan kasblarga e’tibor qaratish va ularning obro‘sini oshirishdir.
+    </p>
+
+    <h4 class="fw-bold mt-4">Taksi bortlarida – Rossiya va SSSRning buyuk ixtirochilari</h4>
+    <p>
+      Kompaniyaning 15 ta taksisiga yorqin dizayn berildi va e’tibor jalb qilish uchun mashhur muhandis va konstruktorlarning ismlari, suratlari va qisqa ma’lumotlari joylashtirildi.
+      Masalan, T-34 tankini yaratgan Mixail Koşkin, Il-2 samolyotining yaratuvchisi Sergey Ilyushin va narkoz ixtirochisi Nikolay Kravkov. Bu odamlarning ismlarini yodda saqlash va ularning mehnatini qadrlash maqsadida amalga oshirildi.
+    </p>
+
+    <h4 class="fw-bold mt-4">Professional haydovchilarni qo‘llab-quvvatlaymiz</h4>
+    <p>
+      <strong>“TMT Taxi”</strong> jamoasida faqat tajribali haydovchilar ishlaydi. Ularning mahoratini qadrlagan holda, bozordagi eng yaxshi shartlarni taklif qilamiz va ular bilan tenglik asosida ishlaymiz. Halol va fidoyi mehnat har doim hurmatga loyiq. Biz professionalarga hamroh bo‘lishni davom ettiramiz.
+    </p>
   </div>
 </section>
 
-<section class="py-5 bg-white">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-8">
-        <h2 class="display-4 fw-bold">👨‍✈️ Professional haydovchilar jamoasi — TMT TAXI faxri</h2>
-      </div>
-    </div>
-
-    <div class="row text-start">
-      <!-- 1 -->
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="d-flex align-items-center mb-2">
-          <span class="me-2" style="color: #FFD700; font-size: 1.5rem;">●</span>
-          <small class="text-muted">01</small>
-        </div>
-        <hr>
-        <h5 class="fw-bold">Qattiq tanlov</h5>
-        <p class="text-muted">Har bir haydovchi qat’iy tanlov asosida ishga olinadi. Ular amaldagi haydovchilik guvohnomasiga ega va tajribali mutaxassislardir.</p>
-      </div>
-
-      <!-- 2 -->
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="d-flex align-items-center mb-2">
-          <span class="me-2" style="color: #FFD700; font-size: 1.5rem;">●</span>
-          <small class="text-muted">02</small>
-        </div>
-        <hr>
-        <h5 class="fw-bold">Tibbiy ko‘rik</h5>
-        <p class="text-muted">Haydovchilar har kuni tibbiy nazoratdan o‘tadi. Bu sizning xavfsizligingiz uchun eng muhim talablarimizdan biridir.</p>
-      </div>
-
-      <!-- 3 -->
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="d-flex align-items-center mb-2">
-          <span class="me-2" style="color: #FFD700; font-size: 1.5rem;">●</span>
-          <small class="text-muted">03</small>
-        </div>
-        <hr>
-        <h5 class="fw-bold">Doimiy tayyorgarlik</h5>
-        <p class="text-muted">Haydovchilarimiz muntazam ravishda:<br>
-
-* malaka oshirish kurslarida qatnashadi,<br>
-
-* xizmat sifati va madaniyatini oshirish bo‘yicha qayta tayyorlanadi.</p>
-      </div>
-
-      <!-- 4 -->
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="d-flex align-items-center mb-2">
-          <span class="me-2" style="color: #FFD700; font-size: 1.5rem;">●</span>
-          <small class="text-muted">04</small>
-        </div>
-        <hr>
-        <h5 class="fw-bold">Texnik nazorat</h5>
-        <p class="text-muted">Avtomobillar har kuni:<br>
-
-* texnik ko‘rikdan o‘tkaziladi,<br>
-
-* barcha muhim tizimlar tekshiriladi,<br>
-            * faqat to‘liq soz holatda yo‘lga chiqishlariga ruxsat beriladi.</p>
-      </div>
-    </div>
+<div class="slider-container">
+  <div class="slider-card active">
+    <img src="./static/img/i1.png" alt="Mihail Ilyich Koshkin" class="avatar">
+    <h3>Kemurdjian Aleksandr Leonovich</h3>
+    <span class="subtitle">Dizayn muhandisi (1921 – 2003)</span>
+    <p>
+    Sovet muhandis-konstruktor, kosmik transport muhandisligi ilmiy maktabining asoschisi, dunyodagi birinchi sayyoralar yaratuvchisi. Texnika fanlari doktori, professor, Lenin mukofoti laureati.
+    </p>
   </div>
-</section>
 
+  <div class="slider-card">
+    <img src="./static/img/i2.png" alt="Boris Semyonovich Yakobi" class="avatar">
+    <h3>Kamov Nikolay Ilyich</h3>
+    <span class="subtitle">Samolyot dizayneri (1902 – 1973)</span>
+    <p>
+    Sovet samolyot konstruktori, Ka vertolyotlarini yaratuvchisi, texnika fanlari doktori. Sotsialistik Mehnat Qahramoni.
+    </p>
+  </div>
+
+  <div class="slider-card">
+    <img src="./static/img/i3.png" alt="Kamov Nikolay Ilyich" class="avatar">
+    <h3>Lipgart Andrey Aleksandrovich</h3>
+    <span class="subtitle">Dizayner, texnika fanlari doktori (1897 – 1980)</span>
+    <p>
+      Sovet avtomobil dizayneri. Texnika fanlari doktori. Artilleriya fanlari akademiyasining muxbir a’zosi. RSFSRda xizmat ko‘rsatgan fan va muhandis. Beshta Stalin mukofoti laureati. 1933-1951 yillarda – Gorkiy avtomobil zavodining bosh konstruktori.
+    </p>
+  </div>
+
+  <div class="slider-card">
+    <img src="./static/img/i4.png" alt="Korolyov Sergey Pavlovich" class="avatar">
+    <h3>Kurchatov Igor Vasilevich</h3>
+    <span class="subtitle">Fizik, fizika-matematika fanlari doktori (1903 – 1960)</span>
+    <p>
+     Rus va sovet fizigi, sovet atom bombasining "otasi". Uch karra Sotsialistik Mehnat Qahramoni. SSSR Fanlar akademiyasi va O‘zbekiston SSR Fanlar akademiyasi akademigi, fizika-matematika fanlari doktori, professor. Atom energiyasi institutining asoschisi va birinchi direktori. SSSRda atom muammosining bosh ilmiy direktori, atom energiyasidan tinch maqsadlarda foydalanish asoschilaridan biri. Lenin mukofoti va to‘rtta Stalin mukofoti laureati.
+    </p>
+  </div>
+
+  <div class="slider-controls">
+    <button class="prev">←</button>
+    <span id="counter">1 / 4</span>
+    <button class="next">→</button>
+  </div>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="./static/js/index5.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

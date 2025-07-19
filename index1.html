@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="stylesheet" href="./static/css/index1.css">
-  <link rel="stylesheet" href="./static/css/index4.css">
+
 
 </head>
 <body>
@@ -78,60 +78,99 @@
 
 <div style="padding-top: 80px;"></div>
 
-<section class="taxopark-section py-5">
+<section class="driver-hero">
   <div class="container">
-    <h2 class="fw-bold mb-4 text-center">TMT Taxi Filiallari</h2>
-    <div class="row">
-      <!-- Filiallar ro‘yxati -->
-      <div class="col-md-5">
-        <div class="branch-list">
-          <div class="branch-item d-flex justify-content-between align-items-center p-3 border-bottom">
-            <div>
-              <h5 class="fw-bold">Yakkasroy</h5>
-              <p class="mb-1 text-muted">Qushbegi-12 B</p>
-              <span class="text-dark">DU-YA 00:00 — 23:59</span><br>
-              <span class="text-muted">24/7 Dam olish kunlarsiz</span>
-            </div>
-            <button class="btn btn-light btn-sm">+</button>
-          </div>
+    <div class="row align-items-center">
 
-          <div class="branch-item d-flex justify-content-between align-items-center p-3 border-bottom">
-            <div>
-              <h5 class="fw-bold">Yakkasroy</h5>
-              <p class="mb-1 text-muted">2-Bobur bek 24-uy</p>
-              <span class="text-dark">DU-SHA 09:00 —-uy 18:00</span><br>
-              <span class="text-muted">Yakshanba dam olish</span>
-            </div>
-            <button class="btn btn-light btn-sm">+</button>
-          </div>
+      <!-- CHAP TOMON -->
+      <div class="col-lg-6 p-5">
+        <h1 class="fw-bold display-4">
+          Avtomobil ijarasi <br> TMT Taxi bilan ishlash uchun
+        </h1>
+        <p class="lead mt-3">
+          TMT Taxi – obro‘li taksi parkda ishlang va doimiy daromadga ega bo‘ling
+        </p>
+        <a href="https://t.me/Tashmedia_trans" class="btn btn-danger btn-lg mt-4">
+          • Haydovchi bo‘lish
+        </a>
+      </div>
 
-          <div class="branch-item d-flex justify-content-between align-items-center p-3 border-bottom">
-            <div>
-              <h5 class="fw-bold">Qoraqamish</h5>
-              <p class="mb-1 text-muted">Shota Rustaveli ko‘chasi, 120-uy</p>
-              <span class="text-dark">DU-SHU 09:00 — 18:00</span><br>
-              <span class="text-muted">Yakshanba dam olish</span>
+      <!-- O‘NG TOMON SLAYDER -->
+      <div class="col-lg-6 p-0 position-relative">
+        <div id="taxiSlider" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- SLAYDER RASMLAR -->
+          <div class="carousel-inner">
+            <!-- 1-slayd -->
+            <div class="carousel-item active">
+              <img src="./static/img/taxi.png" class="d-block w-100" alt="Avtopark">
             </div>
-            <button class="btn btn-light btn-sm">+</button>
-          </div>
         </div>
       </div>
 
-      <!-- Xarita qismi -->
-      <div class="col-md-7">
-        <div class="map-container">
-          <!-- Google map yoki Yandex map joyi -->
-          <iframe
-             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11973.892007!2d69.245872!3d41.271779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDEuMjcxNzc5LCA2OS4yNDU4NzI!5e0!3m2!1sen!2s!4v1700000000000"
-            width="100%"
-            height="450"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy">
-          </iframe>
-        </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="income-section py-5">
+  <div class="container">
+
+    <!-- Yuqori qism -->
+    <div class="row">
+      <div class="col-lg-8">
+        <h2 class="display-5 fw-bold">Daromad 16 000 000 – 20 000 000 so‘m oyiga</h2>
+      </div>
+      <div class="col-lg-4">
+        <p class="lead mt-3">
+          Erkin jadvalda ishlang va <br> har kuni to‘lov oling
+        </p>
       </div>
     </div>
+
+    <hr class="my-4">
+
+    <!-- Pastki 4 ta blok -->
+    <div class="row text-start g-4">
+
+      <!-- 1 -->
+      <div class="col-md-3">
+        <div class="income-item">
+          <div class="income-num">01</div>
+          <h5 class="fw-bold mt-2">Yandex Taxi</h5>
+          <p class="text-muted">Toshkentdagi istalgan aggregatorga ulanish</p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-md-3">
+        <div class="income-item">
+          <div class="income-num">02</div>
+          <h5 class="fw-bold mt-2">Harakat erkinligi</h5>
+          <p class="text-muted">Ortiqcha yo‘l bosishga cheklov yo‘q, kunlik ijaraga olish mumkin</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-md-3">
+        <div class="income-item">
+          <div class="income-num">03</div>
+          <h5 class="fw-bold mt-2">Har 6 oyda bonus</h5>
+          <p class="text-muted">6 kunlik bepul ijaraga ega bo‘ling</p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-md-3">
+        <div class="income-item">
+          <div class="income-num">04</div>
+          <h5 class="fw-bold mt-2">O‘rtacha chek 36 000 so‘m</h5>
+          <p class="text-muted">Ilovamizdagi buyurtmalar asosida</p>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
@@ -291,87 +330,143 @@
   </div>
 </section>
 
-<section class="history-section py-5">
+<section class="tabs-section">
   <div class="container">
-    <h2 class="fw-bold mb-4">Kompaniyamiz tarixi</h2>
-    <p>
-      Bizning taksoparkimiz tarixi 2022-yilda boshlandi. O‘sha paytda, og‘ir o‘tish davrida ham biz o‘z yo‘limizni tanlab,
-      kompaniyamiz obro‘sini ishonchli hamkor sifatida mustahkamlashga qaror qildik.
-    </p>
-    <p>
-      Yillar o‘tdi, yo‘lovchi tashish bozori tez sur’atlar bilan rivojlandi. Bozorga katta sarmoyaga ega “gigantlar” kirib
-      kelib, qisqa muddat ichida ulkan taksoparklarni yaratishdi. Ular bilan raqobatlashish qiyin edi. Ammo vaqt o‘tib,
-      shunday kompaniyalar yopildi yoki sotildi. Chunki ular qisqa muddatli foydani ko‘zlab, obro‘, xodimlar va, ayniqsa,
-      haydovchilar haqida o‘ylashmadi.
-    </p>
-    <p>
-      Biz esa har doim sifat va ishonchlilikni birinchi o‘ringa qo‘ydik. Shu bois, boshqa kompaniyalar yopilib ketganida
-      ham, bizning avtopark asta-sekin, ammo barqaror rivojlanishda davom etdi.
-    </p>
+  <div class="tabs-header">
+    <button class="tab-btn active" data-tab="yandex">Yandex.Taksi</button>
+    <button class="tab-btn" data-tab="ritm">TMT Taxi</button>
   </div>
-</section>
-<section class="history-section py-5">
-  <div class="container">
-    <h2 class="fw-bold mb-4">Bizning muvaffaqiyat sirimiz</h2>
-    <p>
-      Dastlabki 3 yillik faoliyatimiz natijalariga ko‘ra, biz Toshkentdagi eng yirik taksoparklardan biriga aylandik. Agar
-      avtoparklarni yoshi va ishonchliligi bo‘yicha baholaydigan bo‘lsak, TMT Taxi birinchi o‘rinda turadi. Chunki biz 2022-yildan beri
-      faoliyatimizni davom ettirib, haydovchilarimiz va mijozlarimizning ishonchini saqlab keldik.
-    </p>
-    <p>
-      2025-yilga kelib, bizning avtoparkimizda **1800 dan ortiq avtomobil** mavjud bo‘lib, ular “Ekonom”, “Komfort” va “Komfort+”
-      segmentlarini o‘z ichiga oladi. Toshkentda 8 ta xizmat markazimiz va o‘zimizning haydovchilarni tayyorlash o‘quv markazimiz mavjud.
-    </p>
-    <p>
-      Bizning ishonchli hamkor sifatidagi obro‘miz siri shundaki, biz har doim birinchi navbatda **haydovchilarga qulaylik yaratishga e’tibor
-      qaratamiz**. Kompaniyamiz ichki siyosati shunday qurilganki, barcha xodimlarning asosiy vazifasi – haydovchiga yordam berishdir.
-      Har qanday muammo yuzaga kelsa, qo‘llab-quvvatlash xizmati tezda javob beradi. Hatto texnik muammolar ham servisimizda hal qilinadi.
-    </p>
-    <p>
-      Shu sababli ko‘plab haydovchilar internetda bizga minnatdorchilik bildiradi va ijobiy fikr qoldirishadi. Bu esa biz uchun juda muhim va qadrli.
-    </p>
-  </div>
-</section>
-<section class="drivers-feedback py-5">
-  <div class="container">
-    <h2 class="fw-bold mb-5">Bizning haydovchilarimiz nima deyishadi</h2>
-    <div class="row g-4">
 
-      <!-- Fikr 1 -->
-      <div class="col-md-6 d-flex">
-        <div class="video-thumb me-3">
-          <img src="./static/img/taxi5.png" alt="Haydovchi intervyu" class="img-fluid rounded">
-        </div>
-        <div>
-          <p class="quote">“Men mashinani yangi olganman – sarmoya qildim va bir vaqtning o‘zida pul ishladim.”</p>
-          <small class="text-muted">Xudoyberdi Valiyev</small>
-        </div>
+  <div class="tabs-content">
+    <!-- Yandex.Taksi kontenti -->
+    <div class="tab-pane active" id="yandex">
+      <div class="tab-left">
+        <h2><span class="highlight">Sertifikatlangan</span> Yandex.Taksi parkidan avtomobillar</h2>
+        <ul>
+          <li>Yandex.Taxi komissiyasi + 14,5%</li>
+          <li>Tanlash uchun markali avtomobillar</li>
+          <li>Yandex-da ishlash va qo‘llab-quvvatlash muammolarini hal qilishda bepul yordam</li>
+        </ul>
+        <a href="https://t.me/Tashmedia_trans" class="btn btn-primary fw-bold px-4 py-3 mt-3">HAYDOVCHI BO'L</a>
       </div>
-
-      <!-- Fikr 2 -->
-      <div class="col-md-6 d-flex">
-        <div class="video-thumb me-3">
-          <img src="./static/img/taxi6.jpg" alt="Haydovchi intervyu" class="img-fluid rounded">
-        </div>
-        <div>
-          <p class="quote">“Ta’mirlash, servis, sug‘urta – bularning barchasini kompaniya ikki yil davomida hal qilib beradi, men hech narsaga javobgar emasman.”</p>
-          <small class="text-muted">Murodov Shavkat</small>
-        </div>
+      <div class="tab-right">
+        <img src="./static/img/yandex.png" alt="Yandex Pro" />
+        <p class="big-logo">YANDEX PRO</p>
       </div>
-
     </div>
 
-    <!-- Reyting qismi -->
-    <div class="rating-box mt-5">
-      <h4>⭐ 4.9 / 5</h4>
-      <p>59 ta haydovchi fikri asosida</p>
+    <!-- Taksi Ritmi kontenti -->
+    <div class="tab-pane" id="ritm">
+      <div class="tab-left">
+        <h2>Bizning arizamizdagi bitta buyurtmaning o‘rtacha miqdori <span class="highlight"> 25 000 so'm</span></h2>
+        <ul>
+          <li>Bizning arizamizdagi bitta buyurtmaning o‘rtacha miqdori 25 000 so'm</li>
+          <li>Etarli yo‘lovchilar</li>
+          <li>TMT Taxi komissiyasi 3%</li>
+        </ul>
+        <a href="https://t.me/Tashmedia_trans" class="btn btn-primary fw-bold px-4 py-3 mt-3">HAYDOVCHI BO'L</a>
+      </div>
+      <div class="tab-right">
+        <img src="./static/img/tmt.jpg" alt="Taxi Ritm" />
+        <p class="big-logo">TMT Taxi</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="rental-terms">
+  <div class="container">
+    <h2 class="section-title">TMT Taxi uchun avtomobil ijarasi shartlari</h2>
+
+    <div class="terms-grid">
+      <!-- Haydovchilar uchun talablar -->
+      <div class="terms-box">
+        <h2>Haydovchilar uchun talablar</h2>
+        <ul>
+          <li>Yoshi 23 yoshdan yuqori</li>
+          <li>O‘zbekiston fuqaroligi yoki ruxsatnoma</li>
+          <li>O‘zbek yoki rus tilida muloqot qila olish</li>
+          <li>Haydovchilik guvohnomasi va kamida 3 yillik tajriba</li>
+        </ul>
+        <a href="https://t.me/Tashmedia_trans" class="btn btn-warning fw-bold px-4 py-3 mt-3">• HAYDOVCHI BO'L</a>
+      </div>
+
+      <!-- Foydalanish shartlari -->
+      <div class="terms-box">
+        <h2>Foydalanish shartlari</h2>
+        <ul>
+          <li>Litsenziyani rasmiylashtirib beramiz</li>
+          <li>Garov puli talab qilinmaydi</li>
+          <li>Qaytariladigan kafolat depoziti minimal</li>
+          <li>Bir kundan boshlab ijaraga olish imkoni</li>
+          <li>Kilometrga cheklovlar yo‘q</li>
+          <li>Komissiyasiz kunlik to‘lovlar</li>
+          <li>Uzluksiz ijaraning har 7-kuni bepul</li>
+          <li>Shinalar, texnik xizmat, ta’mirlash, sug‘urta va soliqlar parkimiz hisobidan</li>
+          <li>TMT Taxi hisobidan balans to‘ldirganda komissiya olinmaydi</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
+
+<section class="py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-4">sovg'a kalkulyatori</h1>
+    <div class="row">
+
+      <!-- Tanlash qismi -->
+      <div class="col-md-6 mb-5">
+
+        <h5 class="mb-3">Haftada ish kunlari</h5>
+        <div class="d-flex flex-wrap gap-2 mb-4" id="day-buttons">
+          <button class="btn btn-outline-secondary selector-btn" data-value="1">1</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="2">2</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="3">3</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="4">4</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="5">5</button>
+          <button class="btn btn-outline-secondary selector-btn active-btn" data-value="6">6</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="7">7</button>
+        </div>
+
+        <h5 class="mb-3">Kuniga soatlar</h5>
+        <div class="d-flex flex-wrap gap-2 mb-4" id="hour-buttons">
+          <button class="btn btn-outline-secondary selector-btn" data-value="8">8</button>
+          <button class="btn btn-outline-secondary selector-btn active-btn" data-value="9">9</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="10">10</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="11">11</button>
+          <button class="btn btn-outline-secondary selector-btn" data-value="12">12</button>
+        </div>
+
+        <a href="https://t.me/Tashmedia_trans" class="btn btn-warning fw-bold px-4 py-3 mt-3">• AVTOMOBIL IJARASI</a>
+      </div>
+
+      <!-- Natija qismi -->
+      <div class="col-md-6 d-flex">
+        <div class="w-50 bg-warning text-black p-4 d-flex flex-column justify-content-center">
+          <h5 class="fw-semibold">kamfort</h5>
+          <p class="mt-4 mb-1">Sizning daromadingiz</p>
+          <h2 class="fw-bold" id="eco-income">160 392 ₽</h2>
+        </div>
+        <div class="w-50 bg-black text-white p-4 d-flex flex-column justify-content-center">
+          <h5 class="fw-semibold">Biznes</h5>
+          <p class="mt-4 mb-1">Sizning daromadingiz</p>
+          <h2 class="fw-bold" id="comfort-income">189 120 ₽</h2>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-muted mt-4 small">
+      Ma'lumotlar 2025 yil iyun oyidagi o'rtacha qiymatlar asosida.
+    </p>
+  </div>
+</section>
+
 
 
 <!-- Bootstrap JS -->
-<script src="./static/js/index2.js"></script>
+<script src="./static/js/index1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

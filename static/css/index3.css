@@ -1,0 +1,16 @@
+.mobile-app {
+  background: #fff;
+}
+
+.mobile-app h2 {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.mobile-app p {
+  font-size: 20px;
+}
+
+.mobile-app img {
+  max-width: 100%;
+}
